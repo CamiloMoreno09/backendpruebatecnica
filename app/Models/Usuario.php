@@ -5,10 +5,14 @@ namespace App\Models;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Authenticatable as AuthenticatableTrait;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Usuario extends Model implements Authenticatable
 {
     use AuthenticatableTrait;
+
+    use HasApiTokens, HasFactory;
 
     protected $table = 'usuarios'; // Nombre de la tabla en SQL Server
     protected $primaryKey = 'id'; // Clave primaria de la tabla
