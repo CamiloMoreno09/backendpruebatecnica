@@ -47,3 +47,7 @@ Asegúrate de tener instalados los siguientes programas en tu máquina:
 9. Corre el proyecto
    
    php artisan serve
+
+  ¡ IMPORTANTE !
+
+   El backup de la base de datos esta ubicado en la carpeta database
